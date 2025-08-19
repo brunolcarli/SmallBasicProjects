@@ -1,0 +1,20 @@
+GraphicsWindow.KeyDown = WhenButtonClicked
+
+Sub WhenButtonClicked
+    clicked_button = GraphicsWindow.LastKey
+
+    If (clicked_button = "ArrowLeft") Then
+        Turtle.TurnLeft()
+    EndIf
+
+    If (clicked_button = "ArrowRight") Then
+        Turtle.TurnRight()
+    EndIf
+
+    If (clicked_button = "ArrowUp") Then
+        Turtle.Move(20)
+    EndIf
+
+EndSub
+
+Turtle.Show()
