@@ -11,7 +11,15 @@ Sub WhenButtonClicked
         Turtle.TurnRight()
     EndIf
 
+    If (clicked_button = "ArrowDown") Then
+        Turtle.TurnRight()
+    EndIf
+
     If (clicked_button = "ArrowUp") Then
+        Turtle.TurnLeft()
+    EndIf
+
+    If (clicked_button = " ") or (clicked_button = "m") Then
         Turtle.Move(20)
     EndIf
 
